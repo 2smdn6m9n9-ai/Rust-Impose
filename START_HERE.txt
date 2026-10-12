@@ -1,0 +1,19 @@
+RUST IMPOSE — APPLE SILICON — BUILDER v0.1.2
+
+This ZIP is a fixed SOURCE/BUILD package, not the final compiled .app.
+
+IF YOU WANT A DRAG-AND-DROP APP WITHOUT INSTALLING BUILD TOOLS:
+See GET_THE_APP.md and use the GitHub macOS-15 ARM64 build workflow.
+The successful workflow generates RustImpose-AppleSilicon.dmg and .zip.
+
+IF YOU BUILD ON YOUR OWN M-SERIES MAC:
+1. Extract this ZIP.
+2. Double-click BUILD_MAC.command.
+3. If prompted by macOS to install Apple's Command Line Tools, approve it.
+   Once installation finishes, run BUILD_MAC.command again.
+4. The builder detects and automatically installs missing Rust/Cargo.
+5. After a successful build, open dist/RustImpose-AppleSilicon.dmg,
+   then drag Rust Impose.app to Applications.
+
+Only the BUILD computer needs developer tools; the finished .app does not.
+A true Mac-built app is NOT included in this ZIP.
